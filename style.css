@@ -1,0 +1,514 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,200&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;  
+    
+}
+
+body{
+   display: flex;
+   background: linear-gradient(to right, #F2D8D8, #FFE4D6, #7C81AD);
+   background-repeat: no-repeat;
+    
+}   
+
+nav{
+    height: 100%;
+    width: 300px;
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  
+}
+
+.image{
+    display: flex;
+    
+}
+
+.image img{
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px black;
+    margin-top: 10px;
+    margin-left:5px
+}
+
+.name {
+    display: flex;
+}
+
+.name h3 {
+    position: relative;
+    top: 20px;
+    left:5px;
+    font-weight: 300px;
+    font-size: 30px;
+    text-shadow: 0 0 5px rgb(239, 203, 209);
+    
+}
+
+.iletisim {
+    position: absolute;
+    bottom:150px;
+    left: 5px;
+}
+
+.iletisim p {
+    margin-top: 10px;
+}
+
+section {
+    margin-top: 20px;
+    margin-right: 330px; /*aside daki width ile aynı değer veriyoruz*/
+    margin-left: 330px;  /*nav daki width ile aynı veriyoruz*/
+    flex-direction: wrap;
+}
+
+section h4 {
+    justify-content: center;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 2px 2px rgb(216, 187, 216);
+    font-size: 34px;
+    font-weight: 600;
+}
+
+section h5{
+    font-weight: 300px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+section p{
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+section ul{
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+section li{
+    line-height: 1.6;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+aside{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-right: -20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    
+
+.saatler {
+    display: flex;
+    width:250px;
+    height: 200px;
+    position: relative;
+    flex-direction: row;
+    flex-direction: wrap;
+}
+
+.saatler div {
+    margin: 6px;
+    position: relative;
+}
+
+.saatler span {
+    font-size: 18px;
+    width: 60px;
+    height: 40px;
+    padding: 6px;
+    margin: 1px;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffe4e1;
+    display: flex;
+    opacity: 0.7;
+    border-radius: 5px;
+    box-shadow: 0 0 9px grey;
+}
+
+.saatler #pmam {
+    bottom: 0;
+    margin-top: 50px;
+    width: 40px;
+    height: 30px;
+    background-color: #ffe4e1;
+    font-weight: 700;
+
+}
+
+aside .bki {
+    width:200px;
+    height: 400px;
+    background-color: #DBDFEA;
+    border-radius: 20px;
+    box-shadow: 0 0 6px black;
+   margin-left: 20px;
+   flex-direction: row;
+   flex-wrap: wrap;
+
+}
+
+.bki h3{
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+
+.bki input {
+    position: relative;
+    text-align: center;
+    top: 50px;
+    left:5px;
+    width: 190px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 4px black;
+   
+}
+
+.bki button {
+    font-size: 16px;
+    background-color: #8EACCD;
+    cursor: pointer;
+    padding: 5px 15px;
+    position: relative;
+    top: 80px;
+    left:50px
+    
+}
+
+.bki .sonuc {
+    font-size: 16px;
+    position: relative;
+    top: 120px;
+    left: 5px;
+    bottom: 15px
+    
+}
+
+.bki .saglık {
+    font-size: 16px;
+    position: relative;
+    top: 130px;
+    left: 5px;
+    
+}
+
+/* Responsive */
+
+@media screen and (max-width:900px) {
+    nav{
+        display: inline-block;
+        height: 100%;
+        width: 200px;
+        padding-top: 10px;
+        
+    }
+    
+    .image img{
+        width:180px;
+        height: 180px;
+        border-radius: 50%;
+        
+    }
+    
+    .name h3 {
+        position: relative;
+        top: 10px;
+        left:5px;
+        font-weight: 200;
+        font-size: 22px;
+        
+        
+    }
+    
+    .iletisim {
+        position: absolute;
+        bottom:100px;
+        left: 5px;
+    }
+    
+    .iletisim p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    
+    section {
+        margin-top: 20px;
+        margin-left: 210px;
+        margin-right: 210px;
+        flex-wrap: wrap;
+       
+    }
+
+    
+    section h4 {
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    section h5{
+        font-weight: 300px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    section p{
+    line-height: 1.4;
+    font-size: 14px;
+    }
+
+    section ul{
+    line-height: 1.4;
+    font-size: 14px;
+    }
+
+    section li{
+    line-height: 1.4;
+    margin-left: 14px;
+    font-size: 14px;
+    }
+   
+    aside{
+        height: 600px;
+        width: 200px;
+        display: inline-block;
+        padding-top: 10px;  
+        
+    }
+        
+    .saatler {
+        width:130px;
+     
+    }
+    
+    .saatler div {
+        margin: 3px;
+
+    }
+    
+    .saatler span {
+        font-size: 12px;
+        width: 40px;
+        height: 20px;
+        padding: 4px;
+        margin: 1px;
+    
+    }
+    
+    .saatler #pmam {
+        bottom: 0;
+        margin-top: 20px;
+        width: 30px;
+        height: 20px;
+        font-weight: 500;
+    
+    }
+    
+    aside .bki {
+        width:170px;
+        height: 400px;
+       margin-left: 5px;
+       margin-right: 5px;
+       margin-top: -20px;
+    
+    }
+
+    .bki input {
+    width: 165px;
+    height: 35px;
+    
+   
+    }
+
+    .bki button {
+    font-size: 14px;
+    
+    }
+  
+
+}
+
+
+@media screen and (max-width:750px) {
+    nav{
+        display: flex;
+        width: 100%;
+        height: 350px;
+        padding-top: 10px;
+        overflow: hidden;
+        
+    }
+    
+    .image img{
+        width:110px;
+        height: 110px;
+        border-radius: 50%;
+        
+    }
+    
+    .name h3 {
+        position: relative;
+        top: 30px;
+        left:5px;
+        font-weight: 400;
+        font-size: 24px;
+        
+        
+    }
+    
+    .iletisim {
+        position: absolute;
+        top:150px;
+        left: 0;
+    }
+    
+    .iletisim p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    
+    section {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        margin-right: 0;
+        position: relative;
+       
+    }
+
+    
+    section h4 {
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    section h5{
+    font-weight: 300px;
+    font-size: 18px;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 5px;
+    }
+
+    section p{
+    line-height: 1.4;
+    font-size: 13px;
+    }
+
+    section ul{
+    line-height: 1.4;
+    font-size: 14px;
+    }
+
+    section li{
+    line-height: 1.4;
+    margin-left: 14px;
+    font-size: 14px;
+    }
+   
+    aside{
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-right: -20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    
+    .saatler {
+    width:130px;
+ 
+    }
+
+    .saatler div {
+    margin: 3px;
+
+    }
+
+    .saatler span {
+    font-size: 12px;
+    width: 40px;
+    height: 20px;
+    padding: 4px;
+    margin: 1px;
+
+    }
+
+    .saatler #pmam {
+    bottom: 0;
+    margin-top: 20px;
+    width: 30px;
+    height: 20px;
+    font-weight: 500;
+
+    }
+
+    aside .bki {
+    width:170px;
+    height: 400px;
+   margin-left: 5px;
+   margin-right: 5px;
+   margin-top: -20px;
+
+    }
+
+    .bki input {
+    width: 165px;
+    height: 35px;
+
+    }
+
+    .bki button {
+    font-size: 14px;
+
+    }
+
+
+}
+
+    
+   
+    
+    
